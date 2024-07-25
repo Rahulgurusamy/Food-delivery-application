@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="food">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>food</title>
+  <link rel="manifest" href="manifest.json">
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKfxiHFDPhHRF1JcI_qFghulSu7-1RnLM&callback=initMap" async defer></script>
+  <script>
+    function initMap() {
+      const map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: -34.397, lng: 150.644 },
+        zoom: 8
+      });
+    }
+  </script>
+</head>
+<body>
+  <div id="map" style="height: 100%; width: 100%;"></div>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
